@@ -1,0 +1,1 @@
+if (isServer) then {[ud_i_zeus,true] execVM "scripts\ADV_zeus.sqf";};

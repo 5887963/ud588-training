@@ -1,0 +1,5 @@
+author="Petrovic";
+OnLoadName = "Training Course - VR";
+OnLoadMission = "UD588 training simulation designed to assist combat instructors";
+loadScreen = "images\loadScreen.paa";
+enableDebugConsole = 1;

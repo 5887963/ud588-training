@@ -1,0 +1,53 @@
+comment "Exported from Arsenal by Petrovic";
+
+comment "Remove existing items";
+removeAllWeapons player;
+removeAllItems player;
+removeAllAssignedItems player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
+
+comment "Add containers";
+player forceAddUniform "TRYK_U_B_ARO1_CombatUniform";
+for "_i" from 1 to 5 do {player addItemToUniform "rhsusf_mag_7x45acp_MHP";};
+player addVest "rhsusf_iotv_ocp";
+for "_i" from 1 to 10 do {player addItemToVest "ACE_quikclot";};
+for "_i" from 1 to 2 do {player addItemToVest "ACE_epinephrine";};
+for "_i" from 1 to 2 do {player addItemToVest "ACE_atropine";};
+for "_i" from 1 to 2 do {player addItemToVest "ACE_morphine";};
+for "_i" from 1 to 2 do {player addItemToVest "ACE_tourniquet";};
+player addItemToVest "ACE_personalAidKit";
+player addBackpack "TRYK_B_AssaultPack_MARPAT_Desert";
+player addItemToBackpack "ACE_Kestrel4500";
+for "_i" from 1 to 2 do {player addItemToBackpack "ACE_EarPlugs";};
+player addItemToBackpack "ACE_Clacker";
+for "_i" from 1 to 4 do {player addItemToBackpack "ACE_CableTie";};
+player addItemToBackpack "ACE_ATragMX";
+for "_i" from 1 to 2 do {player addItemToBackpack "ACE_IR_Strobe_Item";};
+for "_i" from 1 to 5 do {player addItemToBackpack "ACE_key_lockpick";};
+player addItemToBackpack "ACE_microDAGR";
+player addItemToBackpack "ACE_MapTools";
+for "_i" from 1 to 2 do {player addItemToBackpack "ACE_bloodIV_250";};
+for "_i" from 1 to 12 do {player addItemToBackpack "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+for "_i" from 1 to 2 do {player addItemToBackpack "HandGrenade";};
+for "_i" from 1 to 5 do {player addItemToBackpack "SmokeShell";};
+player addHeadgear "rhsusf_ach_helmet_headset_ocp";
+player addGoggles "TRYK_kio_balaclava_ESS";
+
+comment "Add weapons";
+player addWeapon "rhs_weap_m16a4_carryhandle_pmag";
+player addPrimaryWeaponItem "rhsusf_acc_SF3P556";
+player addPrimaryWeaponItem "RH_SFM952V";
+player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
+player addWeapon "rhsusf_weap_m1911a1";
+player addWeapon "lerca_1200_tan";
+
+comment "Add items";
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "ItemWatch";
+player linkItem "tf_pnr1000a_2";
+player linkItem "ItemGPS";

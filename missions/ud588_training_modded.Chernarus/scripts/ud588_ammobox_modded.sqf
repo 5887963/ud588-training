@@ -1,0 +1,10 @@
+private ["_variable"];
+_variable = _this select 0;
+this addAction["<t color=""#f0ff00"">Arsenal Gear Select</t>", { ["Open", true] call BIS_fnc_arsenal; }];
+this addAction ["<t color=""#ff1111"">Virtual Ammobox</t>", "\mcc_sandbox_mod\VAS\open.sqf"];
+this addAction ["<t color=""#00d2ff"">Civil Security</t>", "loadouts\civil_security.sqf"];
+this addAction ["<t color=""#00d2ff"">Military Contractor</t>", "loadouts\military_contractor.sqf"];
+this addAction ["<t color=""#00d2ff"">Aviation Crew</t>", "loadouts\aviation_crew.sqf"];
+this addAction ["<t color=""#00d2ff"">OCP Rifleman</t>", "loadouts\ocp_rifleman.sqf"];
+this addAction ["<t color=""#00d2ff"">AOR-2 Rifleman</t>", "loadouts\aor2_rifleman.sqf"];
+this addAction ["<t color=""#00d2ff"">FLORA Rifleman</t>", "loadouts\flora_rifleman.sqf"];

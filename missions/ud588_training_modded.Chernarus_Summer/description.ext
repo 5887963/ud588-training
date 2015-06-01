@@ -1,0 +1,8 @@
+author="Petrovic";
+OnLoadName = "Training - Chernarus_S";
+OnLoadMission = "UD588 training simulation designed to assist combat instructors in delivering immersive scenarios";
+loadScreen = "images\loadScreen.paa";
+enableDebugConsole = 1;
+respawn = 3;
+respawnDelay = 10;
+disabledAI = 1;

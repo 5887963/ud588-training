@@ -1,0 +1,267 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"map_vr",
+		"A3_Modules_F_Curator_Curator",
+		"A3_Characters_F_Bootcamp",
+		"A3_Weapons_F_Ammoboxes"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"A3_Characters_F_Bootcamp",
+		"A3_Modules_F_Curator_Curator",
+		"A3_Weapons_F_Ammoboxes",
+		"map_vr"
+	};
+	randomSeed=2329513;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4000.0105,5,4001.9619};
+					id=0;
+					side="WEST";
+					vehicle="B_medic_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="ud_i";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=4;
+				class Item0
+				{
+					position[]={3998.8567,5,4005.9531};
+					azimut=180;
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="B_Soldier_VR_F";
+					player="PLAY CDG";
+					leader=1;
+					skill=0.60000002;
+					text="ud_1";
+				};
+				class Item1
+				{
+					position[]={3999.6052,5,4005.9502};
+					azimut=180;
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="B_Soldier_VR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="ud_2";
+				};
+				class Item2
+				{
+					position[]={4000.3875,5,4005.9736};
+					azimut=180;
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="B_Soldier_VR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="ud_3";
+				};
+				class Item3
+				{
+					position[]={4001.1411,5,4005.9771};
+					azimut=180;
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="B_Soldier_VR_F";
+					player="PLAY CDG";
+					skill=0.60000002;
+					text="ud_4";
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={3963.1055,5,4004.4409};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="ud_i";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="Instructor";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="3";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=5;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="ud_i_zeus";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=1;
+		class Item0
+		{
+			position[]={3994.2239,5,4005.3535};
+			id=6;
+			side="EMPTY";
+			vehicle="B_supplyCrate_F";
+			skill=0.60000002;
+			init="this addAction [""Arsenal Gear Select"",{[""Open"",true] call BIS_fnc_arsenal;}];";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"map_vr"
+	};
+	addOnsAuto[]=
+	{
+		"map_vr"
+	};
+	randomSeed=5682087;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"map_vr"
+	};
+	addOnsAuto[]=
+	{
+		"map_vr"
+	};
+	randomSeed=7357124;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"map_vr"
+	};
+	addOnsAuto[]=
+	{
+		"map_vr"
+	};
+	randomSeed=16447905;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		day=28;
+		hour=13;
+		minute=37;
+		startFogDecay=0.0049999999;
+		forecastFogDecay=0.0049999999;
+	};
+};
