@@ -50,5 +50,5 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "tf_pnr1000a_3";
+player linkItem "tf_anprc148";
 player linkItem "ItemGPS";
