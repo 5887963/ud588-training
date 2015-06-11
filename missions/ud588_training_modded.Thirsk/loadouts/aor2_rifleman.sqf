@@ -1,0 +1,54 @@
+comment "Exported from Arsenal by Petrovic";
+
+comment "Remove existing items";
+removeAllWeapons player;
+removeAllItems player;
+removeAllAssignedItems player;
+removeUniform player;
+removeVest player;
+removeBackpack player;
+removeHeadgear player;
+removeGoggles player;
+
+comment "Add containers";
+player forceAddUniform "TRYK_U_B_ARO2_CombatUniform";
+for "_i" from 1 to 5 do {player addItemToUniform "rhsusf_mag_7x45acp_MHP";};
+player addVest "rhs_6b13_6sh92_radio";
+player addItemToVest "ACE_MapTools";
+player addItemToVest "ACE_microDAGR";
+player addItemToVest "ACE_ATragMX";
+for "_i" from 1 to 4 do {player addItemToVest "ACE_CableTie";};
+for "_i" from 1 to 4 do {player addItemToVest "ACE_IR_Strobe_Item";};
+player addItemToVest "ACE_Clacker";
+for "_i" from 1 to 2 do {player addItemToVest "ACE_EarPlugs";};
+player addItemToVest "ACE_Kestrel4500";
+for "_i" from 1 to 2 do {player addItemToVest "ACE_epinephrine";};
+for "_i" from 1 to 2 do {player addItemToVest "ACE_atropine";};
+for "_i" from 1 to 2 do {player addItemToVest "ACE_morphine";};
+for "_i" from 1 to 2 do {player addItemToVest "ACE_tourniquet";};
+for "_i" from 1 to 5 do {player addItemToVest "ACE_quikclot";};
+for "_i" from 1 to 2 do {player addItemToVest "ACE_bodyBag";};
+for "_i" from 1 to 2 do {player addItemToVest "HandGrenade";};
+for "_i" from 1 to 4 do {player addItemToVest "SmokeShell";};
+player addBackpack "TRYK_B_Alicepack";
+for "_i" from 1 to 5 do {player addItemToBackpack "ACE_quikclot";};
+for "_i" from 1 to 3 do {player addItemToBackpack "ACE_bloodIV_250";};
+player addItemToBackpack "ACE_wirecutter";
+player addItemToBackpack "ACE_personalAidKit";
+player addItemToBackpack "ACE_surgicalKit";
+for "_i" from 1 to 20 do {player addItemToBackpack "hlc_20rnd_762x51_b_G3";};
+player addHeadgear "rhs_6b26_ess_bala";
+player addGoggles "TRYK_headset2_glasses";
+
+comment "Add weapons";
+player addWeapon "hlc_rifle_g3a3ris";
+player addPrimaryWeaponItem "RH_ta31rmr";
+player addWeapon "rhsusf_weap_m1911a1";
+player addWeapon "Binocular";
+
+comment "Add items";
+player linkItem "ItemMap";
+player linkItem "ItemCompass";
+player linkItem "ItemWatch";
+player linkItem "tf_anprc148jem";
+player linkItem "ItemGPS";
