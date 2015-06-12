@@ -56,5 +56,5 @@ comment "Add items";
 player linkItem "ItemMap";
 player linkItem "ItemCompass";
 player linkItem "ItemWatch";
-player linkItem "tf_anprc148jem";
+player additem "ACRE_PRC148";
 player linkItem "ItemGPS";
